@@ -1,0 +1,541 @@
+*, body { font-family: 'Open Sans', sans-serif; }
+
+body { overflow-x: hidden; }
+
+body, h1 { margin: 0; }
+
+
+
+ul {
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+
+
+.blue {
+
+	color: #3CF;
+
+}
+
+
+
+.green {
+
+	color: #CF6;
+
+}
+
+
+
+.tm-blue-text { color: #1cabed; }
+
+.tm-blue-bg {	background-color: #1cabed; }
+
+.tm-blue-bg-transparent {	background-color: #967702; }
+
+.tm-white-text { color: #fff; }
+
+.tm-dark-text {	color: #1d1d1d; }
+
+.tm-dark-bg { background-color: #1d1d1d; }
+
+.tm-light-gray-text { color: #eaeaea; }
+
+
+
+a.tm-light-gray-text:hover {
+
+	color: #fff;
+
+	text-decoration: none;
+
+}
+
+.margin-top-50 { margin-top: 50px; }
+
+.hide {
+
+	position: absolute;
+
+	left: -1000px;
+
+	top: -1000px;
+
+}
+
+
+.absolute-center {
+
+  margin: auto;
+
+  position: absolute;
+
+  top: 0; left: 0; bottom: 0; right: 0;
+
+  height: 120px;
+
+}
+
+.tm-border {
+
+	height: auto;
+
+	width: 100%;
+
+}
+
+.container { max-width: 1000px; }
+
+
+
+/* 2. Header Styles
+
+--------------------------------------*/
+
+.header {	
+
+	background-image: url(../images/header.jpg);
+
+	background-repeat: no-repeat;
+
+	background-position: center center;
+
+	-webkit-background-size: auto;
+
+	-moz-background-size: auto;
+
+	-o-background-size: auto;
+
+	background-size: auto;
+
+	min-height: 250px;
+
+}
+
+.header-inner {	padding-top: 30px; }
+
+.logo {
+
+	font-size: 60px;
+
+	font-weight: 700;
+
+	color:#ffffff;
+
+}
+
+.logo2{
+
+	color:#051082;
+
+}
+
+
+
+/* 3. Menu Styles
+
+--------------------------------------*/
+
+.nav {
+
+	margin-bottom: 0;
+
+	padding-top: 20px;
+
+}
+
+.nav li {
+
+	display: inline-block;
+
+	list-style: none;
+
+}
+
+.nav li>a {
+
+	background-color: rgb(0,0,0);
+
+	color: #fff;
+
+	padding: 10px;
+
+	font-size:20px;
+
+	transition: background-color 0.5s ease;
+
+	-webkit-transition: background-color 0.5s ease;
+
+}
+
+.nav li>a:hover, .nav li>a.active {
+
+	background-color: rgb(0,0,0);
+
+	color: #1cabed;
+
+	text-decoration: none;	
+
+}
+
+
+
+/* 4. Responsive Menu Styles
+
+--------------------------------------*/
+
+#responsive-menu {
+
+  top: 0;
+
+  width: 250px;
+
+  height: 100%;
+
+  background: rgba(243, 243, 243, 0.4);
+
+  position: fixed;
+
+  z-index: 5500;
+
+  right: -1500px;
+
+  display: none;
+
+  overflow: auto;
+
+}
+
+#responsive-menu ul {
+
+  padding: 0;
+
+  margin: 0;
+
+  list-style: none;
+
+}
+
+#responsive-menu ul li {
+
+  display: block;
+
+  margin-bottom: 2px;
+
+}
+
+#responsive-menu ul li a {
+
+  padding: 12px 18px;
+
+  background-color: #1d1d1d;
+
+  color: #1cabed;
+
+  display: block;
+
+  -webkit-border-radius: 4px;
+
+  -webkit-background-clip: padding-box;
+
+  -moz-border-radius: 4px;
+
+  -moz-background-clip: padding;
+
+  border-radius: 4px;
+
+  background-clip: padding-box;
+
+  text-transform: uppercase;
+
+}
+
+#responsive-menu ul li a i {  margin-right: 15px; }
+
+a#mobile_menu {
+
+  font-size: 24px;
+
+  background-color: #051082;
+
+  color: #ffffff;
+
+  width: 50px;
+
+  height: 50px;
+
+  display: block;
+
+  text-align: center;
+
+  line-height: 50px;
+
+  position: fixed;
+
+  top: 20px;
+
+  right: 20px;
+
+  z-index: 5500;
+
+}
+
+
+
+/* 5. Home Styles
+
+--------------------------------------*/
+
+.tm-home-title, .tm-home-subtitle {	font-weight: 700; }
+
+.tm-home-title {
+
+	color: #fff;
+
+	font-size: 30px;	
+
+}
+
+.tm-home-subtitle {	
+        font-size: 18px; 
+        color:#1cabed;
+}
+
+.tm-home-description {
+
+	font-size: 14px;
+
+	color: #828282;
+
+	margin-bottom: 50px;
+
+	text-align: justify;
+
+}
+
+.tm-home-more {
+
+	font-size: 16px;
+
+	font-style: italic;
+
+	font-weight: 700;
+
+	padding: 10px 15px;
+
+}
+
+a.tm-home-more:hover {
+
+	color: #737373;
+
+	text-decoration: none;
+
+}
+
+.tm-home-right { max-width: 350px; }
+
+
+.price-tag {
+
+	background-color: #1cabed;
+
+	border-radius: 50%;
+
+	color: #1d1d1d;
+
+	display: inline-block;
+
+	margin-top: 15px;
+
+	margin-bottom: 15px;
+
+	width: 130px;
+
+	height: 130px;
+
+	vertical-align: middle;
+
+}
+
+.price-tag .price {
+
+	font-size: 35px;
+
+	font-weight: 700;
+                  padding-top:30%;
+                  padding-left:10px;
+
+	vertical-align: middle;
+
+}
+/*6. Orders Style
+
+--------------------------------------*/
+.tm-list-title{	
+     font-weight: 700; 
+     margin-bottom:30px;
+     margin-top:25px;	
+     color: #fff;
+
+     font-size: 30px;
+}
+
+.border_b{
+        border-bottom:1px solid #ffffff;
+        margin-bottom:15px;
+        margin-top:50px;
+}
+.text-center{text-align:center;}
+
+.list{ margin-bottom:10px;}
+.sort-white{
+        background:#fff;
+        padding:7px;"
+}
+.border_t{
+        margin-top:15px;
+        border-top:1px solid #fff;
+        padding-top:10px;
+}
+
+
+/* 7. Form Styles
+
+--------------------------------------*/
+
+#map-canvas { height: 350px; }
+
+.form-control, .btn { border-radius: 0; }
+
+.form-control {
+
+	background-color: rgba(0,0,0,0);
+
+	border: 1px solid rgba(46, 43, 43, 0.27);
+
+	font-size: 12px;
+        width:100%;
+
+}
+
+.form-control:focus {
+
+	border-color: #858585;	
+
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(46, 43, 43, 0.3);
+
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(46, 43, 43, 0.3);
+
+	outline: 0;
+
+}
+.form-group select{
+        height: 34px;
+        width: 100%;
+        background-color: rgba(0,0,0,0);
+
+	border: 1px solid rgba(46, 43, 43, 0.27);
+}
+
+.tm-send-btn {
+
+	font-size: 12px;
+
+	padding: 8px 35px;
+
+}
+
+.tm-send-btn:hover { color: #fff; }
+
+
+
+/* 8. Footer
+
+--------------------------------------*/
+
+footer {
+
+	background-color: #1d1d1d;
+
+	color: #898888;
+
+	padding: 15px 0;
+
+	position: relative;
+
+}
+
+footer p {
+
+	display: inline-block;
+
+	vertical-align: bottom;
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+	.container { max-width: 940px; }
+
+	.logo { font-size: 50px; }
+
+	.nav li>a { padding: 8px 5px; }
+
+	.tm-about-right { text-align: center; }
+
+	.canvas-lines {	padding-top: 0px; }
+
+	.canvas-lines .canvas-overlay {	top: 0px; }
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.tm-home-right {
+
+		margin-top: 40px;
+
+		margin-left: auto;
+
+		margin-right: auto;
+
+	}
+
+
+	.overlay p { text-align: center; }
+
+
+}
+
+@media screen and (max-width: 614px) {
+
+	
+
+	.tm-image-container { width: 50%; }
+
+}
+
+
+
+@media screen and (max-width: 479px) {
+
+	.tm-image-container {
+
+		float: none;
+
+		margin: 0 auto;
+
+		width: 100%;
+
+	}
+
+}
