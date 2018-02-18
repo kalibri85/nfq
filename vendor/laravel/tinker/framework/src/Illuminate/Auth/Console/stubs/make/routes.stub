@@ -1,0 +1,5 @@
+
+Auth::routes();
+
+
+get('/', ['as' => 'cities', 'uses' => 'CityController@index']);
